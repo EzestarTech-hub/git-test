@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzestarEduTech - AI-Powered Learning</title>
+    <meta name="description" content="AI-powered learning platform to help students ace WAEC and JAMB examinations in Mathematics, Physics, Chemistry, and English.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Decor -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap gold-text"></i> Ezestar<span>EduTech</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a><div class="nav-indicator"></div></li>
+                    <li><a href="#features">Features</a><div class="nav-indicator"></div></li>
+                    <li><a href="#subjects">Subjects</a><div class="nav-indicator"></div></li>
+                    <li><a href="#about">About</a><div class="nav-indicator"></div></li>
+                    <li><a href="#contact">Contact</a><div class="nav-indicator"></div></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#cta" class="btn btn-primary btn-glow">Start Learning</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> Next-Gen AI Learning
+                </div>
+                <h1 class="hero-title"><span class="text-gradient">AI-Powered Learning</span> for WAEC & JAMB Success</h1>
+                <p class="hero-description">
+                    EzestarEduTech is your intelligent companion. Ask questions, get simple step-by-step explanations, and master Mathematics, Physics, Chemistry, and English to ace your exams.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#subjects" class="btn btn-primary btn-large btn-glow" id="startLearningBtn">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#features" class="btn btn-outline btn-large">Explore Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-text">Active Students</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-text">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-right">
+                <div class="image-glow"></div>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Students learning interactively" class="hero-image">
+                <div class="floating-card badge-1 float-anim-1">
+                    <div class="icon-box"><i class="fa-solid fa-brain gold-text"></i></div>
+                    <div class="card-text">
+                        <strong>AI Tutor Active</strong>
+                        <span>Personalized pacing</span>
+                    </div>
+                </div>
+                <div class="floating-card badge-2 float-anim-2">
+                    <div class="icon-box"><i class="fa-solid fa-chart-line gold-text"></i></div>
+                    <div class="card-text">
+                        <strong>+25% Score Boost</strong>
+                        <span>Average improvement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Core Features</span>
+                <h2 class="section-title">Everything you need to succeed</h2>
+                <p class="section-desc">Experience a modern learning ecosystem designed specifically for WAEC & JAMB excellence.</p>
+            </div>
+            <div class="features-grid stagger-reveal">
+                <div class="feature-card glass-card" id="card-ai" style="cursor: pointer;">
+                    <div class="feature-icon icon-ai">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Tutoring</h3>
+                    <p>Get instant, personalized explanations for complex topics tailored to your learning pace and style.</p>
+                </div>
+                <div class="feature-card glass-card" id="card-prep" style="cursor: pointer;">
+                    <div class="feature-icon icon-exam">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3>WAEC & JAMB Prep</h3>
+                    <p>Access thousands of past questions and simulated mock exams meticulously designed for maximum readiness.</p>
+                </div>
+                <div class="feature-card glass-card" id="card-quiz" style="cursor: pointer;">
+                    <div class="feature-icon icon-quiz">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <h3>Interactive Quizzes</h3>
+                    <p>Test your knowledge with dynamic quizzes that adapt in difficulty based on your performance.</p>
+                </div>
+                <div class="feature-card glass-card" id="card-track" style="cursor: pointer;">
+                    <div class="feature-icon icon-track">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Smart Tracking</h3>
+                    <p>Visualize your growth with detailed analytics highlighting your strengths and areas needing improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects section-bg-alt" id="subjects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Our Curriculum</span>
+                <h2 class="section-title">Master the Core Subjects</h2>
+                <p class="section-desc">Focused preparation for the subjects that matter most for your future.</p>
+            </div>
+            <div class="subjects-grid stagger-reveal">
+                <div class="subject-card">
+                    <div class="subject-image math-bg">
+                        <div class="subject-tag">Core</div>
+                        <div class="subject-icon-overlay">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                    </div>
+                    <div class="subject-content">
+                        <h3>Mathematics</h3>
+                        <p>Master algebra, geometry, calculus, and statistics with step-by-step problem-solving techniques.</p>
+                        <a href="#cta" class="link-arrow">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <div class="subject-image physics-bg">
+                        <div class="subject-tag">Science</div>
+                        <div class="subject-icon-overlay">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+                    </div>
+                    <div class="subject-content">
+                        <h3>Physics</h3>
+                        <p>Understand mechanics, thermodynamics, and electromagnetism through interactive simulations.</p>
+                        <a href="#cta" class="link-arrow">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <div class="subject-image chemistry-bg">
+                        <div class="subject-tag">Science</div>
+                        <div class="subject-icon-overlay">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                    </div>
+                    <div class="subject-content">
+                        <h3>Chemistry</h3>
+                        <p>Explore periodic trends, organic reactions, and stoichiometry with clear, visual explanations.</p>
+                        <a href="#cta" class="link-arrow">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="subject-card">
+                    <div class="subject-image english-bg">
+                        <div class="subject-tag">Core</div>
+                        <div class="subject-icon-overlay">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                    </div>
+                    <div class="subject-content">
+                        <h3>English Language</h3>
+                        <p>Improve your lexis, structure, comprehension, and essay writing skills for top grades.</p>
+                        <a href="#cta" class="link-arrow">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tutor Platform Demo -->
+    <section class="ai-tutor" id="tutor">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Interactive AI Tutor</span>
+                <h2 class="section-title">Ask Ezestar AI</h2>
+                <p class="section-desc">Experience our intelligent tutor in action. Ask a question and get a personalized explanation instantly.</p>
+            </div>
+            <div class="tutor-container reveal-up glass-card">
+                <div class="tutor-header">
+                    <div class="tutor-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>Ezestar AI Assistant</h3>
+                        <span class="tutor-status"><span class="status-dot"></span> Online</span>
+                    </div>
+                </div>
+                <div class="tutor-chat-area" id="tutorChatArea">
+                    <div class="chat-message bot-message">
+                        <p>Hello! I am your Ezestar AI Tutor. I can explain complex topics simply. How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="tutor-suggestions" id="tutorSuggestions">
+                    <button class="suggestion-chip">Examples of Newton's law</button>
+                    <button class="suggestion-chip">Examples of differentiation</button>
+                    <button class="suggestion-chip">Examples of chemical bonding</button>
+                    <button class="suggestion-chip">Examples in English</button>
+                </div>
+                <div class="tutor-input-area">
+                    <input type="text" id="tutorInput" placeholder="Ask a question about Math, Physics, Chemistry or English..." />
+                    <button class="btn btn-primary btn-glow" id="tutorSendBtn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Practice Generator Section -->
+    <section class="exam-generator section-bg-alt" id="generator">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">WAEC/JAMB Simulator</span>
+                <h2 class="section-title">Exam Practice Generator</h2>
+                <p class="section-desc">Generate standard multiple-choice questions for your exam preparation.</p>
+            </div>
+            <div class="generator-container reveal-up glass-card">
+                <div class="generator-controls">
+                    <div class="control-group">
+                        <label for="genSubject">Subject:</label>
+                        <select id="genSubject" class="form-select">
+                            <option value="math">Mathematics</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="english">English Language</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="genExam">Exam Type:</label>
+                        <select id="genExam" class="form-select">
+                            <option value="waec">WAEC</option>
+                            <option value="jamb">JAMB</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-glow" id="generateQuestionBtn">Generate Question</button>
+                </div>
+                
+                <div class="generated-question-area" id="generatedQuestionArea" style="display: none;">
+                    <div class="gen-q-header">
+                        <span class="gen-q-tag" id="genQTag">WAEC Mathematics</span>
+                    </div>
+                    <div class="gen-q-body">
+                        <h4 id="genQText">Question text will appear here</h4>
+                        <div class="gen-options" id="genOptions">
+                            <!-- Options go here -->
+                        </div>
+                    </div>
+                    <div class="gen-feedback" id="genFeedback" style="display: none;"></div>
+                    <div class="gen-actions">
+                        <button class="btn btn-outline" id="genShowAnswerBtn">Show Answer</button>
+                        <button class="btn btn-secondary" id="genShowExpBtn" style="display: none;">Show Explanation</button>
+                    </div>
+                    <div class="gen-explanation" id="genExplanation" style="display: none;">
+                        <div class="solution-box">
+                            <h4>Step-by-Step Explanation:</h4>
+                            <p id="genExpText">Explanation goes here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Practice Section -->
+    <section class="practice-section" id="practice">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Practice Mode</span>
+                <h2 class="section-title">Test Your Understanding</h2>
+                <p class="section-desc">Step-by-step solutions to help you grasp the methodology.</p>
+            </div>
+            
+            <div class="practice-container reveal-up" id="practiceList">
+                <!-- Question 1 -->
+                <div class="practice-card glass-card q-card">
+                    <div class="practice-header">
+                        <span class="practice-tag math-tag">Mathematics: Calculus</span>
+                        <span class="difficulty-tag">WAEC Level</span>
+                    </div>
+                    <div class="practice-content">
+                        <h3>Question 1:</h3>
+                        <p class="question-text">Find the derivative of <br><strong>y = 2x² + 5x</strong></p>
+                        <div class="mcq-options" data-correct="A">
+                            <button class="mcq-btn" data-val="A">A) 4x + 5</button>
+                            <button class="mcq-btn" data-val="B">B) 2x + 5</button>
+                            <button class="mcq-btn" data-val="C">C) 4x² + 5</button>
+                            <button class="mcq-btn" data-val="D">D) 4x</button>
+                        </div>
+                        <div class="mcq-feedback" style="display:none;"></div>
+                    </div>
+                    <div class="practice-actions">
+                        <button class="btn btn-outline toggle-solution-btn">
+                            <i class="fa-solid fa-eye"></i> Show Solution
+                        </button>
+                    </div>
+                    <div class="practice-solution" style="display: none;">
+                        <div class="solution-box">
+                            <h4>Step-by-Step Solution:</h4>
+                            <p>To differentiate y = 2x² + 5x with respect to x, we apply the power rule.</p>
+                            <ul>
+                                <li>The derivative of 2x² is: 2 × (2x^(2-1)) = 4x</li>
+                                <li>The derivative of 5x is: 5 × (1x^(1-1)) = 5</li>
+                            </ul>
+                            <div class="final-answer">
+                                <strong>dy/dx = 4x + 5</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="practice-card glass-card q-card" style="margin-top: 2rem;">
+                    <div class="practice-header">
+                        <span class="practice-tag" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">Physics: Mechanics</span>
+                        <span class="difficulty-tag">JAMB Level</span>
+                    </div>
+                    <div class="practice-content">
+                        <h3>Question 2:</h3>
+                        <p class="question-text">A car of mass 1000kg accelerates from rest to 20m/s in 10 seconds. What is the net force acting on the car?</p>
+                        <div class="mcq-options" data-correct="B">
+                            <button class="mcq-btn" data-val="A">A) 1000 N</button>
+                            <button class="mcq-btn" data-val="B">B) 2000 N</button>
+                            <button class="mcq-btn" data-val="C">C) 20000 N</button>
+                            <button class="mcq-btn" data-val="D">D) 500 N</button>
+                        </div>
+                        <div class="mcq-feedback" style="display:none;"></div>
+                    </div>
+                    <div class="practice-actions">
+                        <button class="btn btn-outline toggle-solution-btn">
+                            <i class="fa-solid fa-eye"></i> Show Solution
+                        </button>
+                    </div>
+                    <div class="practice-solution" style="display: none;">
+                        <div class="solution-box">
+                            <h4>Step-by-Step Solution:</h4>
+                            <p>Using Newton's Second Law (F = ma) and kinematics (v = u + at):</p>
+                            <ul>
+                                <li>Initial velocity (u) = 0 m/s</li>
+                                <li>Final velocity (v) = 20 m/s</li>
+                                <li>Time (t) = 10 s</li>
+                                <li>Acceleration (a) = (v-u)/t = (20-0)/10 = 2 m/s²</li>
+                                <li>Force = Mass × Acceleration = 1000 kg × 2 m/s² = 2000 N</li>
+                            </ul>
+                            <div class="final-answer">
+                                <strong>F = 2000 N</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose" id="about">
+        <div class="container why-choose-container">
+            <div class="why-choose-image reveal-left">
+                <div class="image-decoration"></div>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Student success">
+            </div>
+            <div class="why-choose-content reveal-right">
+                <span class="section-subtitle">Why Choose EzestarEduTech</span>
+                <h2 class="section-title">The smart way to prepare for your exams</h2>
+                <p class="section-lead">We blend advanced AI technology with proven pedagogical frameworks to deliver unparalleled results.</p>
+                
+                <div class="benefits-list stagger-reveal">
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="benefit-text">
+                            <h4>Simplified Explanations</h4>
+                            <p>Complex theories broken down into easy-to-digest concepts using real-world analogies.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-compass"></i></div>
+                        <div class="benefit-text">
+                            <h4>Exam Strategies</h4>
+                            <p>Learn time management and question-tackling techniques specific to WAEC & JAMB formats.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="benefit-text">
+                            <h4>Personalized Learning</h4>
+                            <p>An AI system that adapts to your learning speed and continuously identifies knowledge gaps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Success Stories</span>
+                <h2 class="section-title">What our students say</h2>
+            </div>
+            <div class="testimonials-grid stagger-reveal">
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"EzestarEduTech made Physics so much easier for me. The AI tutor explained concepts I struggled with for months. I scored an A in my WAEC!"</p>
+                    <div class="student-info">
+                        <div class="student-avatar avatar-1"></div>
+                        <div class="student-details">
+                            <h4>Chidi M.</h4>
+                            <span>Science Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The JAMB practice questions are exactly like the real exam. The progress tracking helped me focus on my weak areas in Chemistry perfectly."</p>
+                    <div class="student-info">
+                        <div class="student-avatar avatar-2"></div>
+                        <div class="student-details">
+                            <h4>Aisha B.</h4>
+                            <span>Aspirant, Med Surge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testimonial-text">"Mathematics was a nightmare until I found this platform. The step-by-step interactive breakdowns are incredibly helpful. Highly recommended!"</p>
+                    <div class="student-info">
+                        <div class="student-avatar avatar-3"></div>
+                        <div class="student-details">
+                            <h4>Tunde O.</h4>
+                            <span>Engineering Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section reveal-up" id="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-circle cta-circle-1"></div>
+                <div class="cta-circle cta-circle-2"></div>
+                <div class="cta-content">
+                    <h2>Ready to transform your grades?</h2>
+                    <p>Join thousands of students who are already using EzestarEduTech to achieve academic excellence today.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-large btn-glow">Get Started For Free <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid reveal-up">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <i class="fa-solid fa-graduation-cap gold-text"></i> Ezestar<span>EduTech</span>
+                    </a>
+                    <p>Your ultimate companion for WAEC and JAMB success. Leveraging AI to make learning personalized and fundamentally effective.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Subjects</h3>
+                    <ul>
+                        <li><a href="#subjects">Mathematics</a></li>
+                        <li><a href="#subjects">Physics</a></li>
+                        <li><a href="#subjects">Chemistry</a></li>
+                        <li><a href="#subjects">English Language</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> <span>hello@ezestaredutech.com</span></li>
+                        <li><i class="fa-brands fa-whatsapp"></i> <span>+234 816 575 1228</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i> <span>12 Education Way, Lagos, Nigeria</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom reveal-up">
+                <p>&copy; 2024 EzestarEduTech. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
